@@ -1,0 +1,159 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FBFBFB"
+    tools:context="com.elephant.multipleconnect.MultipleConnectCalendarFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rlTitle"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_weight="0"
+            android:background="#FFEC6C46">
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="6dp"
+                android:gravity="left|center_vertical"
+                android:singleLine="true"
+                android:text="体验日期"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlCalendarView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <com.elephant.multipleconnect.view.CalendarView
+                android:id="@+id/calendarView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="#FBFBFB"
+                android:dividerHeight="0dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/cityhunter_hunter_bottom_shadow" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/llSet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvSelectedDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:textColor="#424242"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/ivClose"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:padding="20dp"
+                    android:src="@drawable/btn_hunter_close" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#e5e5e5" />
+
+            <TextView
+                android:id="@+id/tvSetPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/btn_hunter_add"
+                android:drawablePadding="28dp"
+                android:gravity="center_vertical"
+                android:paddingBottom="36dp"
+                android:paddingLeft="28dp"
+                android:paddingTop="18dp"
+                android:text="设置活动价格"
+                android:textColor="#FFEC6C46"
+                android:textSize="13sp"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/rlPriceSeted"
+                android:layout_width="match_parent"
+                android:layout_height="84dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/ivPriceIcon"
+                    android:layout_width="72dp"
+                    android:layout_height="84dp"
+                    android:scaleType="center"
+                    android:src="@drawable/cityhunter_hunter_icon_price" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/ivPriceIcon"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="每次活动价格"
+                        android:textColor="#9E9E9E"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tvSetedPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="50元"
+                        android:textColor="#FFEC6C46"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toRightOf="@id/ivPriceIcon"
+                    android:background="#e5e5e5" />
+            </RelativeLayout>
+
+            <com.elephant.multipleconnect.view.MaxLineListView
+                android:id="@+id/lvPriceType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="#FBFBFB"
+                android:dividerHeight="0dp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

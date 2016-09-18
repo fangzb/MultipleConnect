@@ -1,11 +1,22 @@
 <resources>
 
-    <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppOrangeTheme" parent="Theme.AppCompat.Light">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimary">#373C40</item>
+        <item name="colorPrimaryDark">#D3603E</item>
+        <item name="colorAccent">#FFEC6C46</item>
+        <item name="android:colorActivatedHighlight">#373C40</item>
+        <item name="android:textColorPrimary">#ffffff</item>
+        <item name="android:textColorSecondary">#ffffff</item>
+
+        <item name="colorControlNormal">#373C40</item>
+        <item name="colorControlActivated">#000000</item>
+        <item name="colorControlHighlight">#000000</item>
+
     </style>
 
+    <style name="AppOrangeTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
 </resources>
