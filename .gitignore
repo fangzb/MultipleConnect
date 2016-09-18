@@ -1,0 +1,17 @@
+# default
+*.iml
+.gradle
+/local.properties
+/.idea/workspace.xml
+/.idea/libraries
+.DS_Store
+/build
+/captures
+.idea/
+
+# proguard
+mapping.txt
+seeds.txt
+unused.txt
+dump.txt
+
