@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FBFBFB"
-    tools:context="com.elephant.multipleconnect.MultipleConnectCalendarFragment">
+    tools:context="com.elephant.multiple.MultipleConnectCalendarFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -36,7 +36,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1">
 
-            <com.elephant.multipleconnect.view.CalendarView
+            <com.elephant.multiple.view.CalendarView
                 android:id="@+id/calendarView"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -146,7 +146,7 @@
                     android:background="#e5e5e5" />
             </RelativeLayout>
 
-            <com.elephant.multipleconnect.view.MaxLineListView
+            <com.elephant.multiple.view.MaxLineListView
                 android:id="@+id/lvPriceType"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
